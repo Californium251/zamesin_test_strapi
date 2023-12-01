@@ -374,7 +374,7 @@ export interface ApiNewUserNewUser extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    email: Attribute.Email & Attribute.Required;
+    email: Attribute.Email & Attribute.Required & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
